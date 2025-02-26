@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+}
+
+.main-container {
+    display: flex;
+    padding: 115px 52px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 35px;
+    background-color: #ECFDF5;
+    border-radius: 20px;
+}
+
+#separator {
+    background: #D5D4D8;
+    height: 1px;
+    width: 100%;
+}
+
+h1 {
+    max-width: 70%;
+    color: var(--night, #2B283A);
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+    letter-spacing: -2px;
+}
+
+p {
+    color: #6B7280;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.password-state {
+    display: flex;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+flex-wrap: wrap;
+
+}
+
+#password-one, #password-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 244px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #273549;
+    color: #5DEF92;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.button {
+    display: flex;
+    padding: 10px 16px 10px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #10B981;
+    border: none;
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: var(--white, #FFF);
+
+    /* text-base/leading-6/font-medium */
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
