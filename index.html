@@ -14,8 +14,17 @@
             <button class="button" onclick="generatePasswords()">Generate passwords</button>
             <div id="separator"></div>
             <div class="password-state">
-                <div><p id="password-one"></p></div>
-                <div><p id="password-two"></p></div>
+
+                <div class="password-container">
+                    <p id="password-one"></p>
+                    <span class="eye-icon" onclick="toggleVisibility('password-one', this)">👁️</span>
+                </div>
+
+                <div class="password-container">
+                    <p id="password-two"></p>
+                    <span class="eye-icon" onclick="toggleVisibility('password-two', this)">👁️</span>
+                </div>
+
             </div>
         </main>
     </div>

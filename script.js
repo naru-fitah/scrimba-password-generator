@@ -20,10 +20,29 @@ function renderPasswords() {
         password2 += characters[randomSecondIndex];
     }
 
-    firstPassword.textContent = password1; // Assign the final string
+    firstPassword.textContent = password1
     secondPassword.textContent = password2;
+
+    // Ensure eye icons are visible
+    document.querySelectorAll(".eye-icon").forEach(icon => icon.style.display = "inline");
 }
+
 
 function generatePasswords() {
     renderPasswords();
+}
+
+function toggleVisibility(passwordId, iconElement) {
+    let passwordElement = document.getElementById(passwordId);
+
+    if (passwordElement.textContent.startsWith("●")) {
+        // If it's hidden, show the password
+        passwordElement.textContent = passwordElement.dataset.original;
+        iconElement.textContent = "👁️"; // Change to eye icon
+    } else {
+        // Hide the password
+        passwordElement.dataset.original = passwordElement.textContent; // Store the original password
+        passwordElement.textContent = "● ● ● ● ● ● ● ● ●"; // Hide it with dots
+        iconElement.textContent = "🙈"; // Change to eye-off icon
+    }
 }

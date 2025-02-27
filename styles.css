@@ -55,15 +55,20 @@ flex-wrap: wrap;
 
 }
 
-#password-one, #password-two {
+.password-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 244px;
     height: 42px;
     flex-shrink: 0;
     border-radius: 6px;
     background: #273549;
+    padding: 20px;
+
+}
+
+#password-one, #password-two {
     color: #5DEF92;
     font-family: sans-serif;
     font-size: 16px;
@@ -92,3 +97,7 @@ flex-wrap: wrap;
     line-height: 24px; /* 150% */
 }
 
+.eye-icon {
+    display: none;
+    cursor: pointer;
+}
